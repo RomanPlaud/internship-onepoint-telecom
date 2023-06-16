@@ -44,6 +44,8 @@ def train(model, train_loader, optimizer, criterion, device):
     
     for batch_idx, (data, target) in enumerate(train_loader):
         data, target = data.to(device), target.to(device) # move data to device
+        print(data.shape)
+        print(target.shape)
         optimizer.zero_grad() # clear the gradients of all optimized variables
         output = model(data) # forward pass: compute predicted outputs by passing inputs to the model
         loss = criterion(output, target) # calculate the loss

@@ -11,7 +11,7 @@ def get_labels(labels_hierarchy, names_labels_hierarchy, depth=1, sep='|||'):
     names_labels = np.array(list(names_depth_index))
     return np.array(labels), names_labels
 
-def get_data_preprocessed(dataset_name='wikivitals', method='bow', depth=2, split=[0.7, 0.1, 0.2]):
+def get_data_preprocessed(dataset_name='wikivitals', method='bow', depth=2, split=[0.7, 0.15, 0.15]):
 
     dataset = load_netset(dataset_name)
     

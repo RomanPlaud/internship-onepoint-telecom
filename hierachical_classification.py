@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import f1_score
 import torch
 from torch import nn
-from mlp import MLP2, train, test, get_data
+from mlp import MLP, train, test, get_data
 from torch.optim import Adam
 from torch.optim.lr_scheduler import ExponentialLR
 from scipy.sparse import vstack
@@ -39,7 +39,6 @@ if __name__ == '__main__':
     if args.classifier == 'logistic regression':
         model = LogisticRegression(max_iter=500)
         ## concatenate train and validation
-        X = np.vstack((X_train, X_val))
         model.fit(vstack([X_train, X_val]), np.concatenate([y_train, y_val], axis=0))
         y_pred = model.predict(X_test)
         test_f1 = f1_score(y_test, y_pred, average='macro')
@@ -59,7 +58,7 @@ if __name__ == '__main__':
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
         train_loader, val_loader, test_loader = get_data(X_train, y_train, X_val, y_val, X_test, y_test, batch_size)
-        model = MLP2(X_train.shape[1], hidden_size, num_labels)
+        model = MLP(X_train.shape[1], hidden_size, num_labels)
         optimizer = Adam(model.parameters(), lr=lr, weight_decay=weight_decay)
         scheduler = ExponentialLR(optimizer, gamma=gamma)
 
