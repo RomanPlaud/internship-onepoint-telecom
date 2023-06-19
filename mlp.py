@@ -37,15 +37,13 @@ class MLP2(nn.Module):
         return x
     
 ## define a function to train the model
-def train(model, train_loader, optimizer, criterion, device):
+def train_one_epoch(model, train_loader, optimizer, criterion, device):
     model.train()
     running_loss = 0.0
     ## iterate over the training data with tqdm
     
     for batch_idx, (data, target) in enumerate(train_loader):
         data, target = data.to(device), target.to(device) # move data to device
-        print(data.shape)
-        print(target.shape)
         optimizer.zero_grad() # clear the gradients of all optimized variables
         output = model(data) # forward pass: compute predicted outputs by passing inputs to the model
         loss = criterion(output, target) # calculate the loss
@@ -65,6 +63,7 @@ def test(model, test_loader, criterion, device):
             data, target = data.to(device), target.to(device) # move data to device
             output = model(data) # forward pass: compute predicted outputs by passing inputs to the model
             loss = criterion(output, target) # calculate the loss
+            loss_test = nn.CrossEntropyLoss()(output, target)
             running_loss += loss.item() * data.size(0)
             pred = output.argmax(dim=1, keepdim=True) # get the index of the max log-probability
             correct += pred.eq(target.view_as(pred)).sum().item()
@@ -75,7 +74,7 @@ def test(model, test_loader, criterion, device):
 
 ## Define a dataset class for the data
 class Dataset(torch.utils.data.Dataset):
-    def __init__(self, X, labels):
+    def __init__(self, X, labels, hierarchy=None):
         self.X = X.toarray()
         self.labels = labels
     def __len__(self):
