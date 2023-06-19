@@ -62,7 +62,7 @@ def test(model, test_loader, criterion, device, hierarchy, depth):
             for i, hierarchy_level in enumerate(hierarchy):
                 unique = torch.unique(hierarchy_level)
                 output_level = torch.zeros(output.shape[0], (len(unique)), device=output.device)
-                output_depth = torch.log(output_level.scatter_add(1, hierarchy_level.repeat(output.shape[0], 1), output))
+                output_depth = torch.log(output_level.scatter_add(1, hierarchy_level.repeat(output.shape[0], 1).to(output.device), output))
                 target_depth = hierarchy_level[target]
                 loss_level = criterion(output_depth, target_depth)
                 losses[i] += loss_level.item() * data.size(0)
