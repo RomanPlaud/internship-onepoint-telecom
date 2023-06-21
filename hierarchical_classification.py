@@ -122,15 +122,9 @@ if __name__ == '__main__':
                 fold_losses.append(results)
 
             fold_losses = np.array(fold_losses)
-            ## save the results in a .txt file with 95% confidence interval for each metric without erasing what is already in the file
+            ## save the results in a .csv file with 95% confidence interval for each metric without erasing what is already in the file
 
-            with open(f'./results/results.txt', 'a') as f:
-                f.write(f'method:{args.method}_{args.depth}_{args.classifier}_{args.loss}_{args.weights}))\n')
+            with open(f'./results/results.csv', 'a') as f:
                 for i in range(args.depth):
-                    f.write(f'loss_depth_{args.depth-i}: {fold_losses[:,0, i].mean():.4f} +- {1.96*fold_losses[:,0, i].std()/np.sqrt(5):.4f}\n')
-                    f.write(f'acc_depth_{args.depth-i}: {fold_losses[:,1, i].mean():.4f} +- {1.96*fold_losses[:,1, i].std()/np.sqrt(5):.4f}\n')
-                    f.write(f'F1_depth_{args.depth-i}: {fold_losses[:,2, i].mean():.4f} +- {1.96*fold_losses[:,2, i].std()/np.sqrt(5):.4f}\n')
-                    f.write('\n')
-
-
+                    f.write(f'{args.dataset},{args.method},{args.depth},{args.classifier},{args.loss},{args.weights},{args.depth -i}, {fold_losses[:,1, i].mean():.4f}, {1.96*fold_losses[:,1, i].std()/np.sqrt(5):.4f}, {fold_losses[:,2, i].mean():.4f}, {1.96*fold_losses[:,2, i].std()/np.sqrt(5):.4f}\n')
             

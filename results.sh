@@ -6,7 +6,7 @@ do
 done
 
 
-elements=("1. 0." "0.75 0.25" "0.5 0.5" "0.25 0.75" "0. 1.")
+elements=("1. 0." "0.9 0.1" "0.8 0.2" "0.7 0.3" "0.6 0.4" "0.4 0.6" "0.3 0.7" "0.2 0.8" "0.1 0.9", "0. 1.")
 
     # Iterate over the elements array
 for element in "${elements[@]}"

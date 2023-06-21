@@ -1,0 +1,16 @@
+wikivitals,bow,1,mlp,cross_entropy,None,0, 0.9136, 0.0037, 0.8938, 0.0051
+wikivitals,bow,2,mlp,cross_entropy,None,0, 0.8047, 0.0130, 0.6127, 0.0188
+wikivitals,bow,2,mlp,cross_entropy,None,1, 0.9074, 0.0074, 0.8884, 0.0095
+wikivitals,bow,1,mlp,cross_entropy,None,1, 0.9135, 0.0024, 0.8938, 0.0042
+wikivitals,bow,2,mlp,cross_entropy,None,2, 0.8052, 0.0135, 0.6113, 0.0159
+wikivitals,bow,2,mlp,cross_entropy,None,1, 0.9086, 0.0089, 0.8899, 0.0112
+wikivitals,bow,2,mlp,hierarchical_bce_loss,[1.0, 0.0],2, 0.8078, 0.0121, 0.6197, 0.0186
+wikivitals,bow,2,mlp,hierarchical_bce_loss,[1.0, 0.0],1, 0.9072, 0.0074, 0.8874, 0.0095
+wikivitals,bow,2,mlp,hierarchical_bce_loss,[0.9, 0.1],2, 0.8065, 0.0155, 0.6185, 0.0236
+wikivitals,bow,2,mlp,hierarchical_bce_loss,[0.9, 0.1],1, 0.9074, 0.0091, 0.8869, 0.0117
+wikivitals,bow,2,mlp,hierarchical_bce_loss,[0.8, 0.2],2, 0.8069, 0.0144, 0.6220, 0.0205
+wikivitals,bow,2,mlp,hierarchical_bce_loss,[0.8, 0.2],1, 0.9101, 0.0079, 0.8910, 0.0096
+wikivitals,bow,2,mlp,hierarchical_bce_loss,[0.7, 0.3],2, 0.8082, 0.0140, 0.6218, 0.0260
+wikivitals,bow,2,mlp,hierarchical_bce_loss,[0.7, 0.3],1, 0.9082, 0.0072, 0.8878, 0.0097
+wikivitals,bow,2,mlp,hierarchical_bce_loss,[0.6, 0.4],2, 0.8062, 0.0111, 0.6138, 0.0140
+wikivitals,bow,2,mlp,hierarchical_bce_loss,[0.6, 0.4],1, 0.9093, 0.0059, 0.8890, 0.0070

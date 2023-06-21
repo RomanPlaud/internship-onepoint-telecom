@@ -8,3 +8,139 @@ loss_depth_1: 0.3833 +- 0.0269
 acc_depth_1: 0.9045 +- 0.0079
 F1_depth_1: 0.8845 +- 0.0093
 
+method:bow_1_mlp_cross_entropy_None))
+loss_depth_1: 0.3379 +- 0.0134
+acc_depth_1: 0.9123 +- 0.0024
+F1_depth_1: 0.8923 +- 0.0035
+
+method:bow_1_mlp_cross_entropy_None))
+loss_depth_1: 0.3368 +- 0.0123
+acc_depth_1: 0.9132 +- 0.0038
+F1_depth_1: 0.8927 +- 0.0064
+
+method:bow_2_mlp_cross_entropy_None))
+loss_depth_2: 0.8560 +- 0.0518
+acc_depth_2: 0.8082 +- 0.0123
+F1_depth_2: 0.6268 +- 0.0165
+
+loss_depth_1: 0.3791 +- 0.0253
+acc_depth_1: 0.9081 +- 0.0084
+F1_depth_1: 0.8886 +- 0.0107
+
+method:bow_2_mlp_hierarchical_bce_loss_[1.0, 0.0]))
+loss_depth_2: 0.8585 +- 0.0529
+acc_depth_2: 0.8063 +- 0.0118
+F1_depth_2: 0.6268 +- 0.0160
+
+loss_depth_1: 0.3830 +- 0.0276
+acc_depth_1: 0.9075 +- 0.0072
+F1_depth_1: 0.8875 +- 0.0091
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.75, 0.25]))
+loss_depth_2: 0.8490 +- 0.0488
+acc_depth_2: 0.8051 +- 0.0141
+F1_depth_2: 0.6163 +- 0.0209
+
+loss_depth_1: 0.3624 +- 0.0218
+acc_depth_1: 0.9108 +- 0.0062
+F1_depth_1: 0.8913 +- 0.0083
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.5, 0.5]))
+loss_depth_2: 0.8580 +- 0.0511
+acc_depth_2: 0.8034 +- 0.0129
+F1_depth_2: 0.6042 +- 0.0148
+
+loss_depth_1: 0.3405 +- 0.0220
+acc_depth_1: 0.9126 +- 0.0058
+F1_depth_1: 0.8924 +- 0.0078
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.25, 0.75]))
+loss_depth_2: 0.9582 +- 0.0434
+acc_depth_2: 0.7878 +- 0.0133
+F1_depth_2: 0.5709 +- 0.0094
+
+loss_depth_1: 0.3317 +- 0.0193
+acc_depth_1: 0.9139 +- 0.0052
+F1_depth_1: 0.8939 +- 0.0077
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.0, 1.0]))
+loss_depth_2: 13.5013 +- 1.1113
+acc_depth_2: 0.1032 +- 0.0163
+F1_depth_2: 0.0199 +- 0.0038
+
+loss_depth_1: 0.3465 +- 0.0162
+acc_depth_1: 0.9112 +- 0.0041
+F1_depth_1: 0.8907 +- 0.0054
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.9, 0.1]))
+loss_depth_2: 0.8484 +- 0.0484
+acc_depth_2: 0.8081 +- 0.0123
+F1_depth_2: 0.6212 +- 0.0154
+
+loss_depth_1: 0.3722 +- 0.0228
+acc_depth_1: 0.9083 +- 0.0055
+F1_depth_1: 0.8891 +- 0.0067
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.8, 0.2]))
+loss_depth_2: 0.8528 +- 0.0506
+acc_depth_2: 0.8053 +- 0.0139
+F1_depth_2: 0.6157 +- 0.0200
+
+loss_depth_1: 0.3654 +- 0.0247
+acc_depth_1: 0.9090 +- 0.0072
+F1_depth_1: 0.8889 +- 0.0101
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.7, 0.3]))
+loss_depth_2: 0.8375 +- 0.0483
+acc_depth_2: 0.8067 +- 0.0128
+F1_depth_2: 0.6182 +- 0.0110
+
+loss_depth_1: 0.3560 +- 0.0252
+acc_depth_1: 0.9101 +- 0.0061
+F1_depth_1: 0.8896 +- 0.0086
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.6, 0.4]))
+loss_depth_2: 0.8521 +- 0.0486
+acc_depth_2: 0.8049 +- 0.0112
+F1_depth_2: 0.6140 +- 0.0164
+
+loss_depth_1: 0.3524 +- 0.0229
+acc_depth_1: 0.9101 +- 0.0076
+F1_depth_1: 0.8897 +- 0.0094
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.4, 0.6]))
+loss_depth_2: 0.8810 +- 0.0527
+acc_depth_2: 0.7984 +- 0.0133
+F1_depth_2: 0.5932 +- 0.0197
+
+loss_depth_1: 0.3357 +- 0.0213
+acc_depth_1: 0.9106 +- 0.0068
+F1_depth_1: 0.8900 +- 0.0089
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.3, 0.7]))
+loss_depth_2: 0.9304 +- 0.0477
+acc_depth_2: 0.7926 +- 0.0127
+F1_depth_2: 0.5817 +- 0.0127
+
+loss_depth_1: 0.3316 +- 0.0224
+acc_depth_1: 0.9135 +- 0.0062
+F1_depth_1: 0.8934 +- 0.0088
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.2, 0.8]))
+loss_depth_2: 1.0258 +- 0.0430
+acc_depth_2: 0.7787 +- 0.0129
+F1_depth_2: 0.5505 +- 0.0176
+
+loss_depth_1: 0.3317 +- 0.0200
+acc_depth_1: 0.9115 +- 0.0061
+F1_depth_1: 0.8909 +- 0.0081
+
+method:bow_2_mlp_hierarchical_bce_loss_[0.1, 0.9]))
+loss_depth_2: 1.2824 +- 0.0418
+acc_depth_2: 0.7360 +- 0.0111
+F1_depth_2: 0.4686 +- 0.0140
+
+loss_depth_1: 0.3309 +- 0.0156
+acc_depth_1: 0.9118 +- 0.0039
+F1_depth_1: 0.8914 +- 0.0045
+
